@@ -1,0 +1,471 @@
+html {
+	margin: 0px;
+	padding: 0px;
+	background-color: #e3e3e3;
+	background-image: url('../images/noisy.png');
+}
+body {
+	margin: 0 auto;
+	padding: 0px;
+	font-family: sans-serif;
+	min-width: 650px;
+	max-width: 1920px;
+}
+#pageTitle {
+	margin: 0;
+	padding: 0;
+}
+#pageSubtitle {
+	margin: 0;
+	padding: 0;
+}
+.pageWrapper {
+	margin: 0 auto;
+	padding: 20px;
+}
+.qBlockWrapper {
+	display: flex;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+	.qBlockCenterWrapper {
+		width: 90%;
+		box-sizing: border-box;
+		margin: 4px;
+	}
+	.qBlockCenter {
+		width: 100%;
+		float: left;
+		background-color: #e0e0e0;
+		border-radius: 3px;
+		box-shadow: 2px 2px 5px 0px #B5B5B5;
+	}
+	.qBlockHeader {
+		float: left;
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 60px;
+		display: flex;
+		justify-content: space-between;
+	}
+		.qBlockNumber {
+			float: left;
+			width: 50px;
+			min-width: 50px;
+			max-width: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+			.qBlockNumber span {
+				font-weight: 700;
+				font-size: 1.3em;
+				margin: 0;
+				padding: 0;
+			}
+		.qBlockTitle {
+			float: left;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			margin-right: 5px;
+		}
+			.qBlockTitle input {
+				height: 26px;
+				width: 99%;
+				border: none;
+				border-bottom: 2px solid grey;
+				background-color: #e0e0e0;
+				outline: none;
+				font-size: 1.25em
+			}
+		.qBlockType {
+			float: right;
+			width: 160px;
+			max-height: 60px;
+			min-width: 160px;
+			box-sizing: border-box;
+			z-index: 1;
+			margin-right: 7px;
+		}
+			.qBlockTypeContainer {
+				width: 100%;
+				height: 100%;
+				float: right;
+			}
+				.qBlockTypeCurrent {
+					width: 100%;
+					min-height: 42px;
+					max-height: 42px;
+					background-color: white;
+					float: left;
+					display: flex;
+					align-items: center;
+					overflow: hidden;
+					margin-top: 6px;
+					border-radius: 2px;
+				}
+				.qBlockTypeCurrent:hover {
+					background-color: #609dff;
+				}
+				.qBlockTypeCurrent:active {
+					background-color: #2b71e2;
+				}
+					.qBlockTypeCurrentText {
+						height: 42px;
+						width: 83%;
+						float: left;
+						font-weight: 700;
+						display: flex;
+						align-items: center;
+					}
+						.qBlockTypeCurrentText a {
+							box-sizing: border-box;
+							display: flex;
+							height: 42px;
+							align-items: center;
+							text-decoration: none;
+							padding-left: 10px;
+							color: black;
+						}
+						.qBlockTypeCurrent:hover .qBlockTypeCurrentText a {
+							color: white;
+						}
+					.qBlockTypeCurrentIcon {
+						height: 42px;
+						width: 17%;
+						float: right;
+						display: flex;
+						align-items: center;
+					}
+						.qBlockTypeCurrentIcon a {
+							box-sizing: border-box;
+							display: flex;
+							height: 42px;
+							align-items: center;
+							justify-content: center;
+							text-decoration: none;
+							color: black;
+							width: 100%;
+							padding-right: 3px;
+							padding-bottom: 3px;
+						}
+						.qBlockTypeCurrent:hover .qBlockTypeCurrentIcon a {
+							color: white;
+						}
+				.qBlockTypePossible {
+					width: 100%;
+					box-sizing: border-box;
+					background-color: white;
+					border-radius: 0px 0px 2px 2px;
+					text-decoration: none;
+					margin-right: 6px;
+					float: left;
+					display: none;
+					overflow: hidden;
+				}
+					.qBlockTypePossible a {
+						display: block;
+						margin: 0px;
+						padding: 4px;
+						padding-left: 10px;
+						color: black;
+						text-decoration: none;
+					}
+					.qBlockTypePossible a:hover {
+						background-color: #609dff;
+						color: white;
+					}
+					.qBlockTypePossible a:last-of-type {
+						padding-bottom: 10px;
+					}
+			.qBlockType select {
+				height: 30px;
+				width: 95%;
+				border: none;
+				border: 1px solid grey;
+				background-color: #e0e0e0;
+			}
+	.btnDeleteQuestion {
+		margin: 4px;
+		background-color: rgb(255, 119, 119);
+		border-radius: 3px;
+		box-sizing: border-box;
+		float: left;
+		width: 5%;
+		min-width: 60px;
+		max-width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 150%;
+		box-shadow: 2px 2px 5px 0px #B5B5B5;
+	}
+	.btnDeleteQuestion:hover {
+		background-color: #ff3f3f;
+	}
+		.btnDeleteQuestion a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			color: black;
+		}
+		.btnDeleteQuestion i {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	.btnAddQuestion {
+		margin: 4px;
+		background-color: rgb(94, 187, 69);
+		border-radius: 3px;
+		box-sizing: border-box;
+		float: left;
+		width: 5%;
+		min-width: 60px;
+		max-width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 150%;
+		align-self: flex-end;
+		box-shadow: 2px 2px 5px 0px #B5B5B5;
+	}
+	.btnAddQuestion:hover {
+		background-color: #01b72f;
+	}
+		.btnAddQuestion a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			color: black;
+		}
+		.btnAddQuestion i {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	.qBlockContentWrapper {
+		float: left;
+		width: 100%;
+	}
+		.qBlockContentWrapper hr {
+			margin: 0px;
+			padding: 0px;
+		}
+		.qBlockContent {
+			float: left;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 8px;
+		}
+.possibleAnswers {
+
+}
+	.multipleChoiceAnswer {
+		display: flex;
+		align-items: center;
+		margin-bottom: 5px;
+	}
+		.multipleChoiceAnswer i {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.mcqDelete {
+			min-width: 35px;
+			max-width: 35px;
+			box-sizing: border-box;
+			float: left;
+			background-color: rgb(255, 119, 119);
+			border-radius: 2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.mcqDelete:hover {
+			background-color: #ff3f3f;
+		}
+			.mcqDelete a {
+				box-sizing: border-box;
+				width: 35px;
+				height: 35px;
+				text-decoration: none;
+				color: black;
+			}
+			.mcqDelete i {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		.mcqCheck {
+			width: 20px;
+			float: left;
+			display: flex;
+			margin-left: 8px;
+			margin-right: 5px;
+			justify-content: center;
+			align-items: center;
+		}
+			.mcqCheck a {
+				text-decoration: none;
+				color: black;
+				padding: 5px;
+				font-size: 1.2em;
+			}
+		.mcqAnswer {
+			width: 100%;
+			float: left;
+		}
+			.mcqAnswer input {
+				border: none;
+				height: 25px;
+				border-bottom: 1px solid grey;
+				background-color: #e0e0e0;
+				outline: none;
+				width: 100%;
+				font-size: 1.1em;
+			}
+	.multipleChoiceAddAnswer {
+		display: flex;
+		align-items: center;
+	}
+		.multipleChoiceAddAnswer i {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.mcqAdd {
+			min-width: 35px;
+			max-width: 35px;
+			float: left;
+			background-color: rgb(94, 187, 69);
+			border-radius: 2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.mcqAdd:hover {
+			background-color: #01b72f;
+		}
+			.multipleChoiceAddAnswer a {
+				box-sizing: border-box;
+				width: 35px;
+				height: 35px;
+				text-decoration: none;
+				color: black;
+			}
+			.multipleChoiceAddAnswer i {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+	.multipleChoiceAddAnswer span {
+		font-family: sans-serif;
+		margin-left: 8px;
+	}
+.generateQuizWrapper {
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 72px;
+		padding-right: 72px;
+		height: 65px;
+		overflow: hidden;
+		max-width: 800px;
+		margin: 0 auto;
+}
+	.generateQuiz {
+		width: 100%;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 3px;
+		box-shadow: 2px 2px 5px 0px #B5B5B5;
+		overflow: hidden;
+	}
+	.generateQuiz a {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		background-color: #609dff;
+		color: white;
+		font-size: 1.1em;
+		font-weight: 700;
+	}
+		.generateQuiz a:hover {
+			background-color: #2b71e2;
+		}
+
+/* OPEN SANS LOCAL */
+localfont
+Download fonts from googlefonts
+Open Sans   3 of 10 selected 
+  
+CSS
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot');
+  src: url('http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans'),
+       local('Open-Sans-regular'),
+       url('http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=cJZKeOuBrn4kERxqtaUH3Zbd9NUM7myrQQz30yPaGQ4&skey=62c1cbfccc78b4b2&v=v13#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot');
+  src: url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Bold'),
+       local('Open-Sans-700'),
+       url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=k3k702ZOKiLJc3WVjuplzFlIn5tFQcqMuf-jhyJP0ps&skey=cd9e1a36bb25a3c3&v=v13#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXZ2MAKAc2x4R1uOSeegc5U.eot');
+  src: url('http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXZ2MAKAc2x4R1uOSeegc5U.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Light'),
+       local('Open-Sans-300'),
+       url('http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=DXI1ORHCpsQm3Vp6mXoaTVlIn5tFQcqMuf-jhyJP0ps&skey=b33cc031a589c168&v=v13#OpenSans') format('svg');
+}

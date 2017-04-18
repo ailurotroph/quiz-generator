@@ -1,0 +1,105 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<!-- Title -->
+	<title>Create a Quiz!</title>
+
+	<!-- Meta -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css.css">
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script src="https://use.fontawesome.com/e80202f29e.js"></script>
+</head>
+
+<body>
+<div class="pageWrapper">
+
+<!--
+<h1 id="pageTitle">Create a Quiz</h1>
+<h2 id="pageSubtitle">Add questions using the form below</h2>
+-->
+
+<!-- Add question bar -->
+<div class="qBlockWrapper">
+
+	<div class="btnDeleteQuestion" id="btnQ1del"><a href="#"><i class="fa fa-trash-o"></i></a></div>
+
+	<div class="qBlockCenterWrapper">
+		<div class="qBlockCenter">
+
+		<div class="qBlockHeader">
+
+			<div class="qBlockNumber">
+			<span>01.</span>
+			</div>
+
+			<div class="qBlockTitle">
+				<input type="text" name="" placeholder="Question Title">
+			</div>
+
+			<div class="qBlockType">
+				<div class="qBlockTypeContainer">
+					<div class="qBlockTypeCurrent">
+						<a href="#">Multiple Choice  <i class="fa fa-angle-down"></i></a>
+					</div>
+					<div class="qBlockTypePossible">
+						<a href="#">Multiple Choice</a>
+						<a href="#">Short Answer</a>
+						<a href="#">Checkboxes</a>
+					</div>
+				</div>
+				<!-- <select name="Question Type">
+					<option value="Multiple Choice">Multiple Choice</option>
+					<option value="Short Answer">Short Answer</option>
+					<option value="Checkboxes">Checkboxes</option>
+				</select> -->
+			</div>
+		</div>
+
+		<div class="qBlockContentWrapper"><!-- <hr> -->
+			<div class="qBlockContent">
+				<div class="possibleAnswers">
+
+				<div class="multipleChoiceAnswer">
+				<div class="mcqDelete"><a href="#"><i class="fa fa-close"></i></a></div>
+				<div class="mcqCheck"><a href="#"><i class="fa fa-square-o"></i></a></div><!-- 'fa-check-square' -->
+				<div class="mcqAnswer"><input type="text" name="" placeholder="Type one of the answers here, check the correct answer"></div>
+				</div>
+
+				<div class="multipleChoiceAddAnswer">
+					<div class="mcqAdd">
+					<a href="#"><i class="fa fa-plus"></i></a>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+
+	<div class="btnAddQuestion" id="btnQ1add"><a href="#"><i class="fa fa-plus"></i></a></div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<script type="text/javascript" src="quiz.js"></script>
+</body>
+
+</html>

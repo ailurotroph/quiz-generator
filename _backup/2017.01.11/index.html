@@ -1,0 +1,93 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<!-- Title -->
+	<title>Create a Quiz!</title>
+
+	<!-- Meta -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css.css">
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script src="https://use.fontawesome.com/e80202f29e.js"></script>
+</head>
+
+<body>
+<div class="pageWrapper">
+
+<!--
+<h1 id="pageTitle">Create a Quiz</h1>
+<h2 id="pageSubtitle">Add questions using the form below</h2>
+-->
+
+<!-- Add question bar -->
+<div class="qBlockWrapper">
+
+	<div class="btnDeleteQuestion" id="btnQ1del"><i class="fa fa-trash-o"></i>
+	</div>
+
+	<div class="qBlockCenterWrapper">
+		<div class="qBlockCenter">
+
+		<div class="qBlockHeader">
+
+			<div class="qBlockNumber">
+			<span>01.</span>
+			</div>
+
+			<div class="qBlockTitle">
+				<input type="text" name="" placeholder="Question Title">
+			</div>
+
+			<div class="qBlockType">
+				<select name="Question Type">
+					<option value="Multiple Choice">Multiple Choice</option>
+					<option value="Short Answer">Short Answer</option>
+					<option value="Checkboxes">Checkboxes</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="qBlockContentWrapper"><!-- <hr> -->
+			<div class="qBlockContent">
+
+			<!--<legend id="questionFormLegend">This would be the first question (1/5)</legend>-->
+			<div id="possibleAnswers">
+			<input type="radio" class="option" name="0" value="0" id="answer0"> 1. This is the first answer<br>
+			<input type="radio" class="option" name="0" value="1" id="answer1"> 2. A second answer<br>
+			<input type="radio" class="option" name="0" value="2" id="answer2"> 3. Perhaps this is the right answer<br>
+			<input type="radio" class="option" name="0" value="3" id="answer3"> 4. Yet another possibility<br>
+			<input type="radio" class="option" name="0" value="4" id="answer4"> 5. This is the right answer
+			</div>
+
+			<div class="addMultipleChoiceOptionBtn"><i class="fa fa-plus"><span>Add answer</span></i></div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+
+	<div class="btnAddQuestion" id="btnQ1add"><i class="fa fa-plus"></i>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<script type="text/javascript" src="quiz.js"></script>
+</body>
+
+</html>

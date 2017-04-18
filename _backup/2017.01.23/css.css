@@ -1,0 +1,271 @@
+html {
+	margin: 0px;
+	padding: 0px;
+	background-color: #e3e3e3;
+	background-image: url('images/noisy.png');
+}
+body {
+	margin: 0 auto;
+	padding: 0px;
+	font-family: sans-serif;
+	min-width: 650px;
+	max-width: 1920px;
+}
+#pageTitle {
+	margin: 0;
+	padding: 0;
+}
+#pageSubtitle {
+	margin: 0;
+	padding: 0;
+}
+.pageWrapper {
+	margin: 0 auto;
+	padding: 20px;
+}
+.qBlockWrapper {
+	display: flex;
+	width: 100%;
+	margin-bottom: 20px;
+}
+	.qBlockCenterWrapper {
+		width: 90%;
+		box-sizing: border-box;
+		margin: 4px;
+	}
+	.qBlockCenter {
+		width: 100%;
+		float: left;
+		background-color: #e0e0e0;
+		border-radius: 3px;
+		box-shadow: 2px 2px 5px 0px #B5B5B5;
+		overflow: hidden;
+	}
+	.qBlockHeader {
+		float: left;
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 40px;
+		display: flex;
+		justify-content: space-between;
+	}
+		.qBlockNumber {
+			float: left;
+			width: 48px;
+			max-width: 48px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+			.qBlockNumber span {
+				font-weight: 700;
+				margin: 0;
+				padding: 0;
+			}
+		.qBlockTitle {
+			float: left;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			margin-right: 5px;
+		}
+			.qBlockTitle input {
+				height: 26px;
+				width: 99%;
+				border: none;
+				border-bottom: 2px solid grey;
+				background-color: #e0e0e0;
+				outline: none;
+				font-size: 115%;
+			}
+		.qBlockType {
+			float: right;
+			width: 140px;
+			max-height: 40px;
+			min-width: 140px;
+			box-sizing: border-box;
+			z-index: 1;
+			margin-right: 6px;
+		}
+			.qBlockTypeContainer {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				float: right;
+			}
+				.qBlockTypeCurrent {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+					.qBlockTypeCurrent a {
+						width: 100%;
+						padding: 4px;
+						background-color: grey;
+						border-radius: 2px;
+						text-decoration: none;
+					}
+				.qBlockTypePossible {
+					width: 100%;
+					float: left;
+					display: ;
+				}
+			.qBlockType select {
+				height: 30px;
+				width: 95%;
+				border: none;
+				border: 1px solid grey;
+				background-color: #e0e0e0;
+			}
+	.btnDeleteQuestion {
+		margin: 4px;
+		background-color: rgb(255, 119, 119);
+		border-radius: 3px;
+		box-sizing: border-box;
+		float: left;
+		width: 5%;
+		min-width: 50px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 150%;
+		box-shadow: 2px 2px 5px 0px #B5B5B5;
+	}
+		.btnDeleteQuestion a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			color: black;
+		}
+	.btnAddQuestion {
+		margin: 4px;
+		background-color: rgb(94, 187, 69);
+		border-radius: 3px;
+		box-sizing: border-box;
+		float: left;
+		width: 5%;
+		min-width: 50px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 150%;
+		align-self: flex-end;
+		box-shadow: 2px 2px 5px 0px #B5B5B5;
+	}
+		.btnAddQuestion a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			color: black;
+		}
+	.qBlockContentWrapper {
+		float: left;
+		width: 100%;
+	}
+		.qBlockContentWrapper hr {
+			margin: 0px;
+			padding: 0px;
+		}
+		.qBlockContent {
+			float: left;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 8px;
+		}
+.possibleAnswers {
+
+}
+	.multipleChoiceAnswer {
+		display: flex;
+		align-items: center;
+		margin-bottom: 5px;
+	}
+		.multipleChoiceAnswer i {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.mcqDelete {
+			width: 35px;
+			float: left;
+			background-color: rgb(255, 119, 119);
+			border-radius: 2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+			.mcqDelete a {
+				width: 100%;
+				height: 100%;
+				text-decoration: none;
+				color: black;
+				padding: 5px;
+			}
+		.mcqCheck {
+			width: 20px;
+			float: left;
+			display: flex;
+			margin-left: 8px;
+			margin-right: 5px;
+			justify-content: center;
+			align-items: center;
+		}
+			.mcqCheck a {
+				text-decoration: none;
+				color: black;
+				padding: 5px;
+			}
+		.mcqAnswer {
+			width: 100%;
+		}
+			.mcqAnswer input {
+				border: none;
+				height: 25px;
+				border-bottom: 1px solid grey;
+				background-color: #e0e0e0;
+				outline: none;
+				width: 100%;
+			}
+	.multipleChoiceAddAnswer {
+		display: flex;
+		align-items: center;
+	}
+		.multipleChoiceAddAnswer i {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.mcqAdd {
+			width: 35px;
+			float: left;
+			background-color: rgb(94, 187, 69);
+			border-radius: 2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+			.multipleChoiceAddAnswer a {
+				width: 100%;
+				height: 100%;
+				text-decoration: none;
+				color: black;
+				padding: 5px;
+			}
+	.multipleChoiceAddAnswer span {
+		font-family: sans-serif;
+		margin-left: 8px;
+	}
